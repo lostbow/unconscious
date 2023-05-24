@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "MTG";
+    src: url(Plantin.ttf);
+  }
+  
+  .scroller {
+      height: 840px;
+      width: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  .scroller section {
+      scroll-snap-align: start;
+  }
+  
+  #mtg-card {
+      width: 600px;
+      height: auto;
+    }
+  
+  #pic {
+      width: 600px;
+      height: auto;
+  }
+  
+  /* Desktop styling */
+  @media (min-width: 1001px) {
+    #card-container {
+      font-family: 'MTG';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border: 1px solid #000;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    #popup1 {
+      position: absolute;
+      top: 22.9em;
+      left: 32.8em;
+      padding: 10px;
+      background-color: rgba(226, 226, 226, 255);
+      border-radius: 5px;
+      max-width: 22%;
+      font-size: 23px;
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #popup2 {
+      position: absolute;
+      top: 26.6em;
+      left: 30.8em;
+      padding: 10px;
+      background-color: rgba(226, 226, 226, 255);
+      border-radius: 5px;
+      max-width: 25%;
+      font-size: 23px;
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #card-container2 {
+      font-family: 'MTG';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border: 1px solid #000;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .popup2 {
+      position: absolute;
+      top: 22.9em;
+      left: 32.8em;
+      padding: 10px;
+      background-color: rgba(226, 226, 226, 255);
+      border-radius: 5px;
+      max-width: 22%;
+      font-size: 23px;
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #mtg-card2 {
+      position: absolute;
+      width: 200px;
+      height: auto;
+      left: 27em;
+      cursor: pointer;
+    }
+    #pic4 {
+      position: absolute;
+      width: 85px;
+      height: auto;
+      top: 38em;
+      left: 41.8em;
+      cursor: pointer;
+    }
+  }
+  
+  /* Mobile styling */
+  @media (max-width: 1000px) {
+      #card-container {
+        font-family: 'MTG';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Adjust the height as needed */
+        border: 1px solid #000;
+        position: relative;
+        overflow: hidden; /* Ensure the card content doesn't overflow */
+      }
+  
+      #popup1 {
+        position: absolute;
+        top: 23em; /* Adjust the top position as needed */
+        left: 12.5em; /* Adjust the left position as needed */
+        padding: 10px;
+        background-color: rgba(226,226,226,255);
+        border-radius: 5px;
+        max-width: 44%; /* Adjust the width as needed */
+        font-size: 23px; /* Initial font size */
+        white-space: normal; /* Allow text to wrap */
+        overflow: hidden; /* Hide overflowing text */
+        text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+      }
+      #card-container2 {
+        font-family: 'MTG';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Adjust the height as needed */
+        border: 1px solid #000;
+        position: relative;
+        overflow: hidden; /* Ensure the card content doesn't overflow */
+      }
+  
+      #popup2 {
+        position: absolute;
+        top: 26.5em; /* Adjust the top position as needed */
+        left: 10em; /* Adjust the left position as needed */
+        padding: 10px;
+        background-color: rgba(220,228,231,255);
+        border-radius: 5px;
+        max-width: 50%; /* Adjust the width as needed */
+        font-size: 23px; /* Initial font size */
+        white-space: normal; /* Allow text to wrap */
+        overflow: hidden; /* Hide overflowing text */
+        text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+      }
+      #mtg-card2 {
+      position: absolute;
+      width: 150px;
+      height: auto;
+      left: 1em;
+    }
+    #pic4 {
+      position: absolute;
+      width: 85px;
+      height: auto;
+      top: 37.8em;
+      left: 12.4em;
+    }
+      
+  }
